@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+}
+p{
+    color: dimgrey;
+    font-size: 1rem;
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background: url('img/header-bg.png');
+    background-size: cover;
+}
+#intro{
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro div{
+    width: 50%;
+}
+#intro .hero-image img{
+    width: 80%;
+}
+.hero-text .highlight-text{
+    font-size: 3.5rem;
+    color: rgb(226, 17, 181);
+    margin-bottom: 3rem;
+}
+.hero-text h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.hero-text p{
+    margin-bottom: 3rem;
+}
+.hero-text a{
+    font-size: 1.1rem;
+    background:rgb(226, 17, 181);
+    padding: .5rem 1.5rem;
+    color: white;
+    border-radius: 5px;
+}
+main .bio{
+
+    background: url('img/biography-bg.png');
+}
+.biography{
+    display: flex;
+    padding: 100px 0;
+    width: 80%;
+    margin: 0 auto;
+    align-content: center;
+    align-items:center;
+}
+.biography div{
+    width: 50%;
+}
+.biography div img{
+    width: 80%;
+}
+.bio-text h2{
+    font-size: 3.4rem;
+    font-weight: 400;
+    margin: 3rem 0;
+}
+.bio-text{
+    align-self: start;
+    margin-top: 5%;
+}
+.bio-text p{
+    margin-bottom:2rem ;
+}
+.bio-text a{
+    font-size: 1.1rem;
+    background:rgb(226, 17, 181);
+    padding: .5rem 1.5rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.latest-work{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.latest-work h2{
+    text-align: center;
+    font-size: 3.5rem ;
+    padding: 3rem;
+}
+.works{
+    display: flex;
+    flex: 1 30%;
+}
+.works div{
+    margin:0 20px;
+}
+.client-say{
+    padding: 60px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.client-say .client-title h2{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+.client-message{
+    margin: 50px 0;
+    text-align: center;
+}
+.client-message h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.client-message blockquote{
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    color: rgb(78, 77, 77);
+    margin: 30px 0 0 0;
+   font-weight: lighter;
+   font-style: italic;
+}
+.leave-messge{
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    text-align: center;
+    background: rgba(255, 30, 188, 0.856);
+    color: white;
+}
+.leave-messge p{
+    margin-bottom: 20px;
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 15px 0;
+}
+@media (max-width:767px){
+    #intro{
+        width: 70%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    #intro div{
+        width: 100%;
+    }
+    #intro .hero-image{
+       order: -1;
+       margin-bottom: 1.8rem;
+      
+    }
+    .hero-image img{
+        align-self: center;
+    }
+
+    .biography{
+        flex-direction: column;
+    }
+    .biography div{
+        width: 80%;
+    }
+   .works{
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   .latest-work h2{
+    font-size: 2.5rem ;
+
+}
+}
